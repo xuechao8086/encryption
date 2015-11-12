@@ -11,6 +11,8 @@ Description:
 ToDo:
     it is too native too simple, update encryption wigh gpg
 """
+from __future__ import print_function
+
 import os
 import re
 import struct
@@ -79,7 +81,9 @@ class EncryptionFile(object):
 
 
 def usage():
-    print sys.argv[0], "[e|d]" "[filename [filename [filename]]]"
+    print(sys.argv[0], "[e|d] [filename [filename [filename[...]]]]")
+    print("\t\t e for encry")
+    print("\t\t d for decipher")
     sys.exit()
 
 
