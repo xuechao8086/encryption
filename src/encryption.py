@@ -23,8 +23,8 @@ import fnmatch
 class EncryptionFile(object):
     def __init__(self, filename):
         self.filename = filename
-        self.begin = 0x19860903
-        self.end = 0x09031986
+        self.begin = 0x20151112
+        self.end = 0x11122015
 
     def encry_algorithm(self, val):
         """reverse uint8_t, then exchange the highest 4 bit and the lowest 4 bit""" 
